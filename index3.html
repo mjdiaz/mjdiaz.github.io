@@ -32,7 +32,15 @@
   </div>
   
   <script type="text/javascript">
-  
+	$(document).ready(function(){
+		$.ajax({
+			'url' : 'http://mjdiaz.free.nf/ping/',
+			'type': 'get',
+			'success': function(response){
+				console.log(response);
+			}
+		});
+	});
   </script>
 </body>
 </html> 
